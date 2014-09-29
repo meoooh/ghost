@@ -1,0 +1,14 @@
+# fig.yml reference: http://www.fig.sh/yml.html
+
+ghost:
+  build: .
+  ports:
+    - "80:2368"
+  volumes:
+    - "ghost-external:/ghost-external"
+  environment:
+    - GHOST_DB=ghost
+    - DB_ID=
+    - DB_PASS=
+    - DB_HOST=
+    - DB_PORT=
