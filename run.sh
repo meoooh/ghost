@@ -60,6 +60,7 @@ do
     echo "Waiting for confirmation of database... now is $(date)"
     sleep 5
     mysql -u$ID -p$PASS -h$HOST -P$PORT -e "status" > /dev/null
+    RET=$?
     echo $RET
 done
 
