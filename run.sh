@@ -10,7 +10,7 @@ DB=${GHOST_DB:-ghost}
 ID=${DB_ID:-admin}
 PASS=$DB_PASS
 
-HOST=${DB_HOST:-0.0.0.0}
+HOST=${DB_HOST:-172.17.42.1}
 PORT=${DB_PORT:-3306}
 
 cd "$GHOST"
