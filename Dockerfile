@@ -1,4 +1,4 @@
-FROM meoooh/ubuntu14.04
+FROM ubuntu:14.04
 MAINTAINER hgk617@naver.com
 
 # install essential packages
