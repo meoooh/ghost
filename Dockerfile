@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER hgk617@naver.com
 
 # install essential packages
-RUN apt-get -qq -y install curl build-essential libssl-dev unzip mysql-client
+RUN apt-get update && apt-get -qq -y install curl build-essential libssl-dev unzip mysql-client
 
 RUN curl -L http://nodejs.org/dist/v0.10.30/node-v0.10.30-linux-x64.tar.gz -o /node
 
