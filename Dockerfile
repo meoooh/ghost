@@ -10,7 +10,7 @@ RUN tar xf node && rm -rf node && \
     bash -c "ln -s /node-v0.10.30-linux-x64/bin/{node,npm} /usr/local/bin/"
 
 # download ghost
-RUN curl -L https://ghost.org/zip/ghost-0.5.3.zip -o /ghost.zip
+RUN curl -L https://ghost.org/zip/ghost-0.5.5.zip -o /ghost.zip
 
 # install ghost
 RUN unzip -uo ghost.zip -d ghost && \
